@@ -1,0 +1,61 @@
+.footer {
+  background-color: $tertiary-color;
+  padding: 20px;
+
+  &__section {
+    justify-content: space-around;
+  }
+
+  &__h2 {
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 10px 0px;
+  }
+
+  &__item {
+    padding: 10px;
+  }
+}
+  
+// SOCIAL LINKS
+.fa {
+  padding: 8px;
+  font-size: $font-p;
+  text: {
+    align: center;
+    decoration: none;
+  }
+  margin: 4px 2px;
+  border-radius: 50%;
+  filter: grayscale(50%);
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@mixin media-style($background, $color) {
+  background: $background;
+  color: $color;
+}
+
+.fa-facebook {
+  @include media-style(#3b5998, $color-white);
+}
+
+.fa-twitter {
+  @include media-style(#55acee, $color-white);
+}
+
+.fa-instagram {
+  @include media-style(#125688, $color-white);
+}
+
+.fa-linkedin {
+  @include media-style(#007bb5, $color-white);
+}

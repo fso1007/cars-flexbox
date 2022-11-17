@@ -1,0 +1,90 @@
+
+// Import Google font
+@import "dancing-script-font";
+
+// Import Social media buttons
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: {
+    size: 100%;
+    family: $font-family, serif;
+    weight: 300;
+  }
+  vertical-align: baseline;
+  text-decoration: 0;
+  list-style: none;
+}
+
+
+.body--set {
+  background-color: $secondary-color;
+  animation: {
+    name: color-change;
+    duration: 4s;
+  }
+}
+
+
+@keyframes color-change {
+  from {
+    background-color: rgb(0, 0, 0);
+  }
+  to {
+    background-color: $secondary-color;
+  }
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  width: 1900px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.ipt--font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h2 {
+  font-size:$font-h2;
+  color: $color-black;
+  font-weight: 600;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.h2--white {
+  color: $color-white;
+  font-size: $font-h2;
+}
+
+.p {
+  font-size: $font-p;
+  color: $color-black;
+  text-align: justify;
+}
+
+.img {
+  border-radius: 4px;
+  object-fit: cover;
+  width: 550px;
+  height: 350px;
+}

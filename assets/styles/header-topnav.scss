@@ -1,0 +1,48 @@
+.header {
+  background-color: $primary-color;
+  padding: 20px;
+  
+  &__h1 {
+    color: $color-black;
+    font-size: 70px;
+    text-align: center;
+    margin: 40px;
+  }
+
+  &__nav {
+    border-radius: 4px;
+    background-color: $tertiary-color;
+    animation: {
+      name: topnav-animation;
+      duration: 6s;
+    }
+  }
+
+  &__list {
+    margin: auto;
+   
+  }
+  
+  &__item {
+    padding: 20px 40px; 
+
+    &:hover {
+      background-color: $color-black;
+      cursor: pointer;
+    }
+  }
+
+  &__link {
+    margin: 50px;
+  }
+}
+  
+// TOPNAV EFFECT
+@keyframes topnav-animation {
+  from {
+    background-color: rgb(255, 255, 255);
+  }
+  to {
+    background-color: $tertiary-color;
+  }
+}

@@ -1,0 +1,29 @@
+
+// MAIN COLUMN SETTINGS
+.main {
+  
+  &__article {
+    padding: 30px;
+    margin: 20px 10px;
+    background-color: $primary-color;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+  }
+
+  &__p {
+    margin: 20px auto;
+  }
+
+  &__p--tight {
+    margin: 20px 160px;
+  }
+
+  &__fig {
+    margin: 0px auto;
+  }
+}
+
+.column--tight {
+  display: flex;
+  flex-direction: column;
+}

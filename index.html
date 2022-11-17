@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+<!--Meta info-->
+      <meta charset="UTF-8">
+      <meta name="description" content="CSS Cars website" />
+      <meta name="keywords" content="CSS,html,flexbox" />
+      <meta name="author" content="Fabio Oliveira" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CARS</title>
+<!--External links-->
+      <link rel="stylesheet" href="assets/styles/style.css">
+    </head>
+    <body class="body--set">
+<!--Header/topnav-->
+      <header class="container header">
+        <h1 class="header__h1">Sport Cars</h1>
+        <nav class="row header__nav">
+            <ul class="row header__list">
+              <li class="header__item">
+                <a href="#" class="header__link h2--white">Images</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link h2--white">Contact</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link h2--white">About us</a>
+              </li>
+            </ul>
+        </nav>
+      </header>
+<!--Main content-->
+      <main class="container">
+<!--Section 1 - Info about cars-->
+        <section class="row">
+          <article class="column main__article">
+            <h2 class="h2">Ferrari</h2>
+            <p class="p main__p">
+              Ferrari is one of the world’s most admired luxury sports car
+              automakers. The company officially launched in 1947. However,
+              the automaker’s legendary founder and namesake Enzo Ferrari
+              was involved in the industry long before then.
+            </p>
+            <figcaption>
+              <img class="img" src="assets/images/ferrari.png" alt="Ferrari car">  
+            </figcaption>
+          </article>
+          <article class="column main__article">
+            <h2 class="h2">Mercedes-Benz</h2>
+            <p class="p main__p">
+              The Mercedes-Benz brand has a rich heritage that spans more
+              than 130 years, one that has become synonymous with the 
+              concepts of excellence, elegance, and innovation. Since Carl 
+              Benz introduced the "Motorwagen" in 1886, customers have 
+              depended on Mercedes-Benz vehicles to elevate their driving 
+              lives and to stylishly transport them to any destination. 
+            </p>
+            <figcaption>
+              <img class="img" src="assets/images/mercedes.png" alt="Mercedes-benz car">  
+            </figcaption>
+          </article>
+          <article class="column main__article">
+            <h2 class="h2">Aston Martin</h2>
+            <p class="p main__p">
+              Aston Martin was started by Lionel Martin and Robert Bamford
+              who sold Singer cars in West London. Their company Bamford
+              and Martin were incorporated in 1913. They also raced cars
+              in the 'Aston Hill Climb' and a special car, built by Martin
+              using an existing engine and chassis, raced in the event in
+              1914.
+            </p>
+            <figcaption>
+              <img class="img" src="assets/images/aston-martin.png" alt="Aston Martin car">  
+            </figcaption>
+          </article>
+        </section>
+<!--Section 2 - Our history and contact form-->
+        <section class="row">
+          <article class="column--tight main__article">
+            <h2 class="h2">Our history</h2>
+            <p class="p main__p--tight">
+              John Depan, the fourth generation operator of an over 100
+              year old family car business, stepped up to become an “alpha”
+              store in Oppsen to test the concept. During the 2020-2022
+              financial recession the franchise concept was a casualty.
+              However, the Oppsen store continued to operate and has
+              developed into an integrator of automotive services. Today,
+              All Things Automotive is a one-stop shop under one roof, with
+              one management team and one marketing and technology platform
+              that allows for a more efficient operation and passes many
+              savings onto YOU.
+            </p>
+            <figcaption class="main__fig">
+              <img class="img" src="assets/images/our-factory.png" alt="Car manufacturer">
+            </figcaption>
+          </article>
+          <article class="column main__article">
+            <h2 class="h2">Contact Us</h2>
+            <form class=" main__form" action="/action_page.php">
+              <label class="p main__label" for="fname">First Name</label>
+              <input class="main__input ipt--font" type="text" id="fname" name="firstname"
+              placeholder="e.g., John">
+              <label class="p main__label" for="lname">Last Name</label>
+              <input class="main__input ipt--font" type="text" id="lname" name="lastname"
+              placeholder="e.g., Wick">
+              <label class="p main__label" for="country">Car Brand</label>
+                <select class="main__input ipt--font" id="car-brand" name="car-brand">
+                  <option class="ipt--font" value="ferrari">Ferrari</option>
+                  <option class="ipt--font" value="mercedes">Mercedes-Benz</option>
+                  <option class="ipt--font" value="aston-martin">Aston Martin</option>
+                </select>
+              <label class="p main__label" for="subject">Subject</label>
+              <textarea class="main__input main__text ipt--font" id="subject" name="subject" 
+              placeholder="How can we help?"></textarea>
+              <input class="main__input--submit ipt--font" type="submit" value="Submit">
+            </form>
+          </article>
+        </section>
+      </main>
+<!--Footer-->
+      <footer class="container footer">
+        <section class="footer__section row">
+          <h2 class="footer__h2 h2--white">&copy  fso1007 - 2022</h2>
+          <nav>
+            <h2 class="footer__h2 h2--white">Check our social media</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link fa fa-facebook"></a></li>
+              <li class="footer__item">
+                <a href="#" class="footer__link fa fa-twitter"></a></li>
+              <li class="footer__item">
+                <a href="#" class="footer__link fa fa-instagram"></a></li>
+              <li class="footer__item">
+                <a href="#" class="footer__link fa fa-linkedin"></a></li>
+            </ul>
+          </nav>
+        </section>
+      </footer>
+    </body>
+  </html>
