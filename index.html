@@ -3,9 +3,9 @@
     <head>
 <!--Meta info-->
       <meta charset="UTF-8">
-      <meta name="description" content="CSS Cars website" />
-      <meta name="keywords" content="CSS,html,flexbox" />
-      <meta name="author" content="Fabio Oliveira" />
+      <meta name="description" content="CSS Cars website">
+      <meta name="keywords" content="CSS,html,flexbox">
+      <meta name="author" content="Fabio Oliveira">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>CARS</title>
 <!--External links-->
@@ -97,21 +97,20 @@
           <article class="column main__article">
             <h2 class="h2">Contact Us</h2>
             <form class=" main__form" action="/action_page.php">
-              <label class="p main__label" for="fname">First Name</label>
-              <input class="main__input ipt--font" type="text" id="fname" name="firstname"
-              placeholder="e.g., John">
+              <label class="p main__label" for="fname">First Name (required)</label>
+              <input class="main__input ipt--font" type="text" name="firstname"
+              placeholder="e.g., John" required>
               <label class="p main__label" for="lname">Last Name</label>
-              <input class="main__input ipt--font" type="text" id="lname" name="lastname"
+              <input class="main__input ipt--font" type="text" name="lastname"
               placeholder="e.g., Wick">
               <label class="p main__label" for="country">Car Brand</label>
-                <select class="main__input ipt--font" id="car-brand" name="car-brand">
+                <select class="main__input ipt--font" name="car-brand">
                   <option class="ipt--font" value="ferrari">Ferrari</option>
                   <option class="ipt--font" value="mercedes">Mercedes-Benz</option>
                   <option class="ipt--font" value="aston-martin">Aston Martin</option>
                 </select>
-              <label class="p main__label" for="subject">Subject</label>
-              <textarea class="main__input main__text ipt--font" id="subject" name="subject" 
-              placeholder="How can we help?"></textarea>
+              <label class="p main__label" for="subject">Subject (required)</label>
+              <textarea class="main__input main__text ipt--font" name="subject" placeholder="How can we help?" minlength="10" maxlength="400" required></textarea>
               <input class="main__input--submit ipt--font" type="submit" value="Submit">
             </form>
           </article>

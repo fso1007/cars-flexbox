@@ -44,9 +44,21 @@
     &:focus {
       border: $form-border;
     }
+
+/* Client-side form validation */
+    &:invalid {
+      border: 1px solid red;
+      box-shadow: 0 0 5px 1px red;
+    }
+
+    &:focus:invalid {
+      box-shadow: none;
+    }
+  
   }
 
 }
+
 
   
 
