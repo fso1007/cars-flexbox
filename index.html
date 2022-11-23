@@ -97,13 +97,13 @@
           <article class="column main__article">
             <h2 class="h2">Contact Us</h2>
             <form class=" main__form" action="/action_page.php">
-              <label class="p main__label" for="fname">First Name (required)</label>
+              <label class="p main__label" for="fname">First Name *</label>
               <input class="main__input ipt--font" type="text" name="firstname"
-              placeholder="e.g., John" required>
+              placeholder="e.g., John" minlength="3" required>
               <label class="p main__label" for="lname">Last Name</label>
               <input class="main__input ipt--font" type="text" name="lastname"
               placeholder="e.g., Wick">
-              <label class="p main__label" for="email">Mail</label>
+              <label class="p main__label" for="email">Mail *</label>
               <input class="main__input ipt--font" type="email" name="mail" placeholder="e.g., jhon@hotmail.com">
               <label class="p main__label" for="country">Car Brand</label>
                 <select class="main__input ipt--font" name="car-brand">
@@ -111,9 +111,10 @@
                   <option class="ipt--font" value="mercedes">Mercedes-Benz</option>
                   <option class="ipt--font" value="aston-martin">Aston Martin</option>
                 </select>
-              <label class="p main__label" for="subject">Subject (required)</label>
+              <label class="p main__label" for="subject">Subject *</label>
               <textarea class="main__input main__text ipt--font" name="subject" placeholder="How can we help?" minlength="10" maxlength="400" required></textarea>
               <input class="main__input--submit ipt--font" type="submit" value="Submit">
+              <span class="ipt--font">* Mandatory field</span>
             </form>
           </article>
         </section>
