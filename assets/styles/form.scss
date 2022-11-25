@@ -16,7 +16,7 @@
     height: 150px;
   }
 
-  &__input--submit {
+  &__button {
     width: 100%;
     padding: 10px 5px;
     margin: 10px;
@@ -46,9 +46,11 @@
     }
   }
 }
-  
 
-
-  
-
-  
+.validation-message {
+  display: block;
+  color: red;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+}
